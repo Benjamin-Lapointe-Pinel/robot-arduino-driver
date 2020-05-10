@@ -4,19 +4,19 @@
 
 class RobotIO
 {
-  private:
-    const int DATA;
-    const int CLOCK;
-    const int LATCH;
-    byte outputs;
+	private:
+		const int DATA;
+		const int CLOCK;
+		const int LATCH;
+		byte outputs;
 
-    RobotIO(int data, int clock, int latch);
-    
-  public:
-    static RobotIO& get();
-    
-    void setDigitalOutput(int output, int value);
-    byte sendOutputs();
+		RobotIO(int data, int clock, int latch);
+
+	public:
+		static RobotIO& get();
+
+		void setDigitalOutput(int output, int value);
+		byte sendOutputs();
 };
 
 #endif
